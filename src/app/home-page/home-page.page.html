@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item class="ion-padding-top">
+      <ion-label>
+        <ion-button expand="block" [routerLink]="['/set-reminder']">Add</ion-button>
+      </ion-label>
+    </ion-item>
+    <ion-item class="ion-padding-top">
+      <ion-label>
+        <ion-button expand="block">Show All</ion-button>
+      </ion-label>
+    </ion-item>
+    <ion-item class="ion-padding-top">
+      <ion-label>
+        <ion-button expand="block">3</ion-button>
+      </ion-label>
+    </ion-item>
+    
+  </ion-list>
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add Reminder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>MM DD YY</ion-label>
+    <ion-datetime displayFormat="MM DD YY" 
+    placeholder="Select Date" 
+    ([ngModel])="selectedDate"
+    (ionChange)="setDate()"></ion-datetime>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>Disabled</ion-label>
+    <ion-datetime id="dynamicDisabled" displayFormat="MM DD YY" disabled value="1994-12-15"></ion-datetime>
+  </ion-item>
+</ion-content>
